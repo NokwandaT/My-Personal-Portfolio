@@ -1,8 +1,40 @@
+:root {
+  --primary-color: #6ac1b8;
+  --secondary-color: #e1f6f4;
+  --box-shadow: 0 5px 10px rgba(12, 10, 10, 0.3);
+}
+body {
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+h2,
+h3,
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--secondary-color);
+}
 h1 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 800;
+  color: #7bc74d;
 }
-.icons {
-  text-align: center;
+.btn {
+  background-color: #3b6ac0;
+  box-shadow: var(--box-shadow);
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+.img-fluid {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  box-shadow: var(--box-shadow);
+}
+.icon {
+  color: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+}
+.icon:hover {
+  color: #3b6ac0;
 }
