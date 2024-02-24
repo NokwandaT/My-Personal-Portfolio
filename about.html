@@ -29,9 +29,9 @@
     <title>Nokwanda Madonsela</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Nokwanda Madonsela</a>
+        <a class="navbar-brand font-weight-bold">Nokwanda Madonsela</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,23 +43,27 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="heading d-flex justify-content-center"><h1>About me</h1></div>
@@ -69,13 +73,13 @@
           <img
             src="/images/Me.JPG"
             alt="Picture of Nokwanda"
-            class="img-fluid rounded shadow-lg d-block d-sm-block"
+            class="image-2 img-fluid rounded shadow-lg d-block d-sm-block"
           />
         </div>
 
         <div class="col-sm-6 about-me p-5">
-          <h2>Hi, I am Nokwanda Madonsela</h2>
-          <h5>Front-end Developer, based in South Africa</h5>
+          <h2>Hi, I am <strong> Nokwanda Madonsela </strong></h2>
+          <h5 class="text-muted">Front-end Developer, based in South Africa</h5>
           <br />
           <p>
             I am a Front-end focused developer who loves to create, maintain and
@@ -83,19 +87,38 @@
             websites which are easy to use and can be accessed by anyone. I also
             hold a degree in Engineering and Environmental Geology.
           </p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <div class="skills-icons d-flex">
+              <div class="m-1">
+                <i class="icon fa-brands fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="m-1">
+                <i class="icon fa-brands fa-html5"></i>
+                <p>HTML:5</p>
+              </div>
+              <div class="m-1">
+                <i class="icon fa-brands fa-css3"></i>
+                <p>CSS-3</p>
+              </div>
+              <div class="m-1">
+                <i class="icon fa-brands fa-bootstrap"></i>
+                <p>bootstrap</p>
+              </div>
+              <div class="m-1">
+                <i class="icon fa-brands fa-github"></i>
+                <p>Github</p>
+              </div>
+              <div class="m-1">
+                <i class="icon fa-brands fa-figma"></i>
+                <p>Figma</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="skills">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-          <i class="icon fa-brands fa-js"></i>
-          <i class="icon fa-brands fa-html5"></i>
-          <i class="icon fa-brands fa-css3"></i>
-          <i class="icon fa-brands fa-bootstrap"></i>
-          <i class="icon fa-brands fa-github"></i>
-          <i class="icon fa-brands fa-figma"></i>
-        </div>
-      </div>
+
       <a class="btn" href="/projects.html ">See my projects</a>
     </div>
   </body>

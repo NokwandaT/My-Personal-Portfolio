@@ -29,9 +29,9 @@
     <title>Nokwanda Madonsela</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Nokwanda Madonsela</a>
+        <a class="navbar-brand font-weight-bold">Nokwanda Madonsela</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,26 +43,30 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-lg-4" href="/contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="heading d-flex justify-content-center p-5">
+    <div class="heading d-flex justify-content-center pb-5">
       <h1>My Awesome Projects✨</h1>
     </div>
     <div class="container text-center">
@@ -70,11 +74,11 @@
         <div class="col-sm-6">
           <img
             src="/images/menu.png"
-            class="img-fluid rounded"
+            class="img-fluid rounded shadow"
             alt="menu project"
           />
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 shadow pt-5">
           <h2 class="mb-3">Resturant App</h2>
           <p>
             A simple resturent app to show the menu and contact details of the
@@ -85,8 +89,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 pt-5">
+      <div class="row mt-5">
+        <div class="col-sm-6 pt-5 shadow">
           <h2 class="mb-3">Weather app</h2>
           <p>
             Uses API development to get real time data for a specitic location
@@ -99,9 +103,10 @@
           </div>
         </div>
         <div class="col-sm-6">
-          <img src="/images/weather.png" class="img-fluid rounded" />
+          <img src="/images/weather.png" class="img-fluid rounded shadow" />
         </div>
       </div>
+      <a class="btn" href="/contact.html">Contact me</a>
     </div>
   </body>
 </html>

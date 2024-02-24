@@ -18,15 +18,29 @@ p {
   font-family: var(---default-font-family);
   color: black;
 }
-
+.nav-link {
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.nav-link:hover {
+  color: white;
+  background-color: black;
+}
 .btn {
   background-color: #fcc314;
   box-shadow: var(--box-shadow);
   font-family: var(---default-font-family);
   padding: 20px;
-  margin: 50px;
+  margin: 10px;
 }
 .btn:hover {
+  background-color: var(--primary-color);
+}
+.about-btn {
+  color: black;
   background-color: white;
 }
 .img-fluid {
@@ -34,44 +48,70 @@ p {
   display: flex;
   justify-content: center;
   margin: 50px auto;
-  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: 38px 52px 33px -6px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 38px 52px 33px -6px rgba(0, 0, 0, 0.44);
+  box-shadow: 38px 52px 33px -6px rgba(0, 0, 0, 0.44);
 }
-.icon {
-  color: var(--primary-color);
-  box-shadow: var(--box-shadow);
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
 }
-.icon:hover {
+footer .email-link:hover {
   color: var(--primary-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 .heading h1 {
-  margin-top: 100px;
+  margin-top: 40px;
+  text-shadow: 5px 5px 3px white;
 }
 .about-me {
   margin-top: 50px;
   box-shadow: var(--box-shadow);
+  background: transparent;
 }
 .about-me h1 {
   font-family: var(---default-font-family);
   color: var(--primary-color);
 }
-.skills h2 {
+.skills h3 {
   text-align: center;
   margin-bottom: 30px;
+  font-weight: 700;
+  text-shadow: 5px 5px 3px white;
+}
+.skills p {
+  font-size: 11px;
 }
 .skills-icons {
   text-align: center;
-  margin: 30px auto;
-  background-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  padding: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  padding: 20px;
+
   box-shadow: var(--box-shadow);
 }
 .icon {
-  margin: 0 20px;
+  margin: 0 10px;
   color: var(--primary-color);
   background-color: #eeeeee;
   padding: 10px 14px;
   border-radius: 50%;
-  font-size: 20px;
+  font-size: 15px;
+}
+.image-2 {
+  height: 400px;
+  width: 400px;
+}
+.contact {
+  height: 800px;
 }
