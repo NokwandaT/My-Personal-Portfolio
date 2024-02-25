@@ -42,6 +42,7 @@ p {
 .about-btn {
   color: black;
   background-color: white;
+  border: 1px solid var(--secondary-color);
 }
 .img-fluid {
   width: 300px;
@@ -113,5 +114,7 @@ footer .social-links a:hover {
   width: 400px;
 }
 .contact {
-  height: 800px;
+  margin-top: 50px;
+  box-shadow: var(--box-shadow);
+  background: transparent;
 }
